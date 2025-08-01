@@ -1,1 +1,15 @@
 
+def outer(num1,num2):
+    sum = num1 + num2
+    def inner():
+        return int (sum / 2)
+    return inner()
+
+print(outer(10,20))
+
+
+def sum(num1,num2):
+    def div():
+        print(int((num1+num2)/2))
+    div()
+sum(10,20)
